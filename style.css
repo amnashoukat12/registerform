@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 80%;
+    max-width: 400px;
+    height: auto; 
+    margin: 140px auto; 
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px black;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: orange;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+span {
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 80%; /* Adjusted width for responsiveness */
+    max-width: 250px; /* Added max-width to prevent it from becoming too wide */
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.btn button{
+    margin: 18px;
+    padding: 7px; 
+    width: 40%; 
+    max-width: 200px; 
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: orange;
+}
+.btn button:hover{
+     color: white;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .box {
+        width: 90%; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="file"],
+    .btn button {
+        width: 100%; 
+        max-width: none; 
+    }
+}
